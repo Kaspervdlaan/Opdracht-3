@@ -206,4 +206,33 @@ li {
     text-transform: uppercase;
 }
 
+/* ------------------------------- 4.4 Services -------------------------------- */
+
+.inner-container3 {
+    flex-basis: 1300px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 20px;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services {
+    flex-basis: 300px;
+    height: 280px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 40px;
+
+    border: 10px solid yellowgreen;
+
+}
+
+
 /* ------------------------------- 5. Media Queries -------------------------------- */
