@@ -72,6 +72,7 @@ li {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: 40px;
 }
 
 .content {
@@ -150,7 +151,7 @@ li {
 /* --------------- 4.3 Main content ------------------- */
 
 .inner-container2 {
-    flex-basis: 1200px;
+    flex-basis: 1600px;
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 20px;
@@ -163,6 +164,8 @@ li {
 .content-main {
     display: flex;
     flex-direction: row;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .text-container {
@@ -173,17 +176,34 @@ li {
     align-self: center;
 }
 
-.image-container {
+.image-container-right {
     display: flex;
     flex-grow: 1;
-    flex-shrink: 0;
+    flex-shrink: 1;
     justify-content: flex-end;
+}
+
+.image-container-left {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: flex-start;
 }
 
 .main-images{
     width:80%;
 }
 
+.squiggle-image {
+    margin-bottom: 25px;
+}
 
+.text-container p {
+    margin-bottom: 25px;
+}
+
+.text-container a {
+    text-transform: uppercase;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
