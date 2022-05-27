@@ -144,6 +144,10 @@ li {
     color: #4845E4;
 }
 
+.lower-content  {
+    margin-bottom: 40px;
+}
+
 .section-container {
     padding: 50px;
 }
@@ -159,6 +163,8 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 40px;
+    padding-bottom: 120px;
 }
 
 .content-main {
@@ -190,6 +196,10 @@ li {
     justify-content: flex-start;
 }
 
+.backdrop-image {
+    filter: drop-shadow(2px 10px 10px #676767);
+}
+
 .main-images{
     width:80%;
 }
@@ -206,6 +216,10 @@ li {
     text-transform: uppercase;
 }
 
+.background-main {
+    background-color: #F3F6F9;
+}
+
 /* ------------------------------- 4.4 Services -------------------------------- */
 
 .inner-container3 {
@@ -213,7 +227,7 @@ li {
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 20px;
-    margin-top: 100px;
+    margin-top: 40px;
 
     display: flex;
     flex-direction: row;
@@ -229,10 +243,16 @@ li {
     flex-shrink: 0;
     flex-grow: 0;
     padding: 40px;
-
-    border: 10px solid yellowgreen;
-
+    border: 2px solid #5722CD;
+    box-shadow: 2px 2px 10px #a6a5a5;
 }
 
+.services h4 {
+    color: #5722CD;
+}
+
+.services p {
+    color: #7A7A7A;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
