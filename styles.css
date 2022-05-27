@@ -1,0 +1,150 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+/*
+Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services")
+Uitzonderingen:
+
+Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst);
+*/
+
+:root {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 25px;
+}
+
+li {
+    list-style: none;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.inner-container {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.content {
+    padding: 60px;
+}
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+header {
+    position: relative;
+}
+
+.header-content {
+    margin-bottom: 80px;
+}
+
+.header-background {
+    background-color: #4845E4;
+}
+
+header h1,h4  {
+    color: white;
+}
+
+nav {
+    display: flex;
+    background-color: #4845E4;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin: 0 20px;
+    padding: 20px;
+    color: white;
+}
+
+.header-button {
+    padding: 20px 30px;
+    background-color: #ED4385;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    filter: drop-shadow(6px 5px 5px black);
+    margin-bottom: 30px;
+}
+
+.squiggle {
+    position: absolute;
+    bottom: 0;
+}
+
+.squiggle img {
+    width: 50px;
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+
+.content h3 {
+    color: #4845E4;
+}
+
+.section-container {
+    padding: 50px;
+}
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
