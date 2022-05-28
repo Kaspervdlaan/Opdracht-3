@@ -170,6 +170,7 @@ li {
 .content-main {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     margin-bottom: 40px;
     margin-top: 40px;
 }
@@ -182,18 +183,11 @@ li {
     align-self: center;
 }
 
-.image-container-right {
+.image-container {
     display: flex;
-    flex-grow: 1;
+    flex-basis: 800px;
+    flex-grow: 0;
     flex-shrink: 1;
-    justify-content: flex-end;
-}
-
-.image-container-left {
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
-    justify-content: flex-start;
 }
 
 .backdrop-image {
@@ -201,7 +195,7 @@ li {
 }
 
 .main-images{
-    width:80%;
+    width: 100%;
 }
 
 .squiggle-image {
@@ -261,7 +255,7 @@ li {
     color: #7A7A7A;
 }
 
-/* ------------------------------- 4.5 Footer -------------------------------- */
+/* ------------------------------- 4.5 Contact form -------------------------------- */
 
 .background-contact {
     background-color: #5722CD;
@@ -290,6 +284,14 @@ label {
 #name, #email, #message {
     padding: 10px;
     width: 100%;
+}
+
+/* ------------------------------- 4.6 Footer -------------------------------- */
+
+footer {
+    background-color: #0C0C0C;
+    padding: 20px;
+    color: white;
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
