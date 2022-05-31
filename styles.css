@@ -35,8 +35,15 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* ------------------------------- 2. Typography ----------------------------------- */
+
+a {
+    text-decoration: none;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -106,6 +113,10 @@ nav {
     justify-content: flex-end;
 }
 
+nav li a {
+    color: white;
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -114,7 +125,6 @@ ul {
 li {
     margin: 0 20px;
     padding: 20px;
-    color: white;
 }
 
 .header-button {
@@ -164,12 +174,20 @@ li {
     align-items: center;
     justify-content: center;
     padding: 40px;
-    padding-bottom: 120px;
+    margin-bottom: 120px;
 }
 
 .content-main {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.content-main-left {
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
     margin-bottom: 40px;
     margin-top: 40px;
@@ -199,7 +217,7 @@ li {
 }
 
 .squiggle-image {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .text-container p {
@@ -208,6 +226,13 @@ li {
 
 .text-container a {
     text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.text-container a:hover {
+
 }
 
 .background-main {
@@ -295,3 +320,36 @@ footer {
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (max-width: 930px) {
+    .content-main {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .content-main-left {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .image-container {
+        display: flex;
+        flex-basis: 300px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .main-images{
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        background-color: #4845E4;
+        justify-content: center;
+    }
+}
