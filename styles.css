@@ -70,20 +70,23 @@ li {
 }
 
 .inner-container {
-    flex-basis: 800px;
+    flex-basis: 1400px;
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 20px;
 
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
-    padding: 40px;
+    justify-content: center;
 }
 
 .content {
-    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
 }
 /* --------------- 3.2 Other --------------------------- */
 
@@ -96,7 +99,8 @@ header {
 }
 
 .header-content {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .header-background {
@@ -137,6 +141,8 @@ li {
     font-family: 'Roboto', sans-serif;
     filter: drop-shadow(6px 5px 5px black);
     margin-bottom: 30px;
+    margin-top: 30px;
+    width: 30%;
 }
 
 .squiggle {
@@ -154,6 +160,10 @@ li {
     color: #4845E4;
 }
 
+.top-content {
+    margin-top: 40px;
+}
+
 .lower-content  {
     margin-bottom: 40px;
 }
@@ -164,17 +174,16 @@ li {
 
 /* --------------- 4.3 Main content ------------------- */
 
-.inner-container2 {
-    flex-basis: 1600px;
+.inner-container-case-studies {
+    flex-basis: 1200px;
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 20px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px;
-    margin-bottom: 120px;
 }
 
 .content-main {
@@ -231,28 +240,18 @@ li {
     font-size: 14px;
 }
 
-.text-container a:hover {
-
-}
-
-.background-main {
+.outer-container-main {
     background-color: #F3F6F9;
 }
 
 /* ------------------------------- 4.4 Services -------------------------------- */
 
-.inner-container3 {
-    flex-basis: 1300px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    margin: 0 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-
+.content-services {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 40px;
+    align-items: center;
+    padding: 60px;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -321,17 +320,12 @@ footer {
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 950px) {
     .content-main {
         display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-
-    .content-main-left {
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
         margin-bottom: 20px;
         margin-top: 20px;
     }
@@ -352,4 +346,5 @@ footer {
         background-color: #4845E4;
         justify-content: center;
     }
+
 }
